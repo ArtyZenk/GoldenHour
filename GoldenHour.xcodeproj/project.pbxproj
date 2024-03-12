@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		F3412C772B9F772E0076094B /* GoldenHourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3412C762B9F772E0076094B /* GoldenHourApp.swift */; };
-		F3412C792B9F772E0076094B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3412C782B9F772E0076094B /* ContentView.swift */; };
+		F3412C792B9F772E0076094B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3412C782B9F772E0076094B /* TabBarView.swift */; };
 		F3412C7B2B9F77300076094B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3412C7A2B9F77300076094B /* Assets.xcassets */; };
 		F3412C7E2B9F77300076094B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3412C7D2B9F77300076094B /* Preview Assets.xcassets */; };
+		F3412C892B9F7E440076094B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3412C882B9F7E440076094B /* SettingsView.swift */; };
+		F3412C8B2B9F7E9E0076094B /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3412C8A2B9F7E9E0076094B /* FavoritesView.swift */; };
+		F3412C8D2B9F7F0C0076094B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3412C8C2B9F7F0C0076094B /* MainView.swift */; };
+		F3D1BB282BA084B400113909 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1BB272BA084B400113909 /* InfoRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3412C732B9F772E0076094B /* GoldenHour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenHour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3412C762B9F772E0076094B /* GoldenHourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenHourApp.swift; sourceTree = "<group>"; };
-		F3412C782B9F772E0076094B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3412C782B9F772E0076094B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F3412C7A2B9F77300076094B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3412C7D2B9F77300076094B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3412C882B9F7E440076094B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F3412C8A2B9F7E9E0076094B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		F3412C8C2B9F7F0C0076094B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F3D1BB272BA084B400113909 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,8 @@
 		F3412C752B9F772E0076094B /* GoldenHour */ = {
 			isa = PBXGroup;
 			children = (
-				F3412C762B9F772E0076094B /* GoldenHourApp.swift */,
-				F3412C782B9F772E0076094B /* ContentView.swift */,
-				F3412C7A2B9F77300076094B /* Assets.xcassets */,
-				F3412C7C2B9F77300076094B /* Preview Content */,
+				F3412C862B9F7D170076094B /* Sources */,
+				F3412C872B9F7D990076094B /* Resources */,
 			);
 			path = GoldenHour;
 			sourceTree = "<group>";
@@ -65,6 +71,52 @@
 				F3412C7D2B9F77300076094B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3412C842B9F7CF10076094B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F3412C762B9F772E0076094B /* GoldenHourApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F3412C852B9F7D0E0076094B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F3412C782B9F772E0076094B /* TabBarView.swift */,
+				F3412C882B9F7E440076094B /* SettingsView.swift */,
+				F3412C8A2B9F7E9E0076094B /* FavoritesView.swift */,
+				F3412C8C2B9F7F0C0076094B /* MainView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F3412C862B9F7D170076094B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F3412C842B9F7CF10076094B /* App */,
+				F3412C852B9F7D0E0076094B /* Scenes */,
+				F3D1BB262BA0846800113909 /* Design elements  */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F3412C872B9F7D990076094B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3412C7A2B9F77300076094B /* Assets.xcassets */,
+				F3412C7C2B9F77300076094B /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3D1BB262BA0846800113909 /* Design elements  */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1BB272BA084B400113909 /* InfoRowView.swift */,
+			);
+			path = "Design elements ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3412C792B9F772E0076094B /* ContentView.swift in Sources */,
+				F3412C8B2B9F7E9E0076094B /* FavoritesView.swift in Sources */,
+				F3412C892B9F7E440076094B /* SettingsView.swift in Sources */,
+				F3412C792B9F772E0076094B /* TabBarView.swift in Sources */,
+				F3D1BB282BA084B400113909 /* InfoRowView.swift in Sources */,
+				F3412C8D2B9F7F0C0076094B /* MainView.swift in Sources */,
 				F3412C772B9F772E0076094B /* GoldenHourApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoldenHour/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GoldenHour/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 9DSLGCL4J8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GoldenHour/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GoldenHour/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 9DSLGCL4J8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
